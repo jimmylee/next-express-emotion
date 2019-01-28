@@ -9,6 +9,8 @@ const handle = app.getRequestHandler();
 app.prepare().then(() => {
   const server = express();
 
+  server.use('/static', express.static(__dirname + '/static'));
+
   server.get('/custom-route/:id', (req, res) => {
     return app.render(req, res, '/', { id: req.params.id });
   });
