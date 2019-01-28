@@ -1,24 +1,54 @@
 # next-express-emotion
 
-If you like the following:
+My boilerplate for creating a web application with a server.
 
-- [NextJS + Custom Express](https://github.com/zeit/next.js/)
+Use [this Emotion 11 example](https://github.com/zeit/next.js/tree/canary/examples/with-emotion-11) if you do not want a server.
+
+#### Primary dependencies
+
+- [NextJS + Express Server](https://github.com/zeit/next.js/)
 - [Emotion CSS-in-JS](https://github.com/emotion-js/emotion)
 
-You may like my prototyping setup, it is designed to be small and simple. There are 8 dependencies. I like to write my own styles so if you need a style library you will need to add your own.
+#### Jimmy, why on earth would I use this?
 
-### Setup
+- You love server side rendering.
+- You don't need a database, see [next-postgres](https://github.com/jimmylee/next-postgres) if you do.
+- You like my front-end code and want to see my technical choices in one place.
+- You need meta tag recommendations for SEO.
+- You are comfortable with the starting 16 dependencies for a full client and server application. I rarely need anything else.
+- You need something you can extend because you write your own custom components and styles.
 
-Make sure NodeJS version 10+ is installed on your machine. Then run.
+#### Okay, why CSS-in-JS?
+
+- We use `css` as a prop so it still feels like [writing Vanilla CSS](https://github.com/jimmylee/next-express-emotion/blob/master/pages/index.js).
+- Auto-prefixing support, unless it is a quirk like hiding scrollbars on Firefox.
+- O(1) class name lookup like [Tachyons](https://tachyons.io/), except each class gets an unique string generated and you don't have to memorize their names.
+
+**Why not [insert another option]?**
+
+If you are sincere and researched, I am happy to have a conversation. Please file an issue.
+
+## Setup
+
+Make sure NodeJS 10+ is installed. Then run:
 
 ```sh
 npm install
 npm run dev
 ```
 
-### Deploy To Production
+Now view localhost:8080 in your browser.
 
-You can use my [Render](https://render.com/i/internet-gift-from-jim) invite. Other services such as [Heroku](https://heroku.com) and [Now V1](https://now.sh) are fine too.
+## Deploy To Production
+
+I use these services for all of my work:
+
+- [Render](https://render.com/i/internet-gift-from-jim)
+- [Fleek](https://fleek.co)
+- [Vercel](https://vercel.com/)
+- [Heroku](https://heroku.com)
+
+Then on the service you can run:
 
 ```sh
 npm run build
@@ -27,4 +57,4 @@ npm run start
 
 ## Questions?
 
-Feel free to slang any feels to [@wwwjim](https://twitter.com/wwwjim).
+Twitter: [@wwwjim](https://twitter.com/wwwjim).

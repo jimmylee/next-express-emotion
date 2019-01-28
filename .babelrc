@@ -1,9 +1,16 @@
 {
   "presets": [
-    "next/babel"
+    [
+      "next/babel",
+      {
+        "transform-runtime": {
+          "useESModules": false
+        }
+      }
+    ],
+    "@emotion/babel-preset-css-prop",
   ],
   "plugins": [
-    ["emotion"],
     ["module-resolver", {
       "alias": {
         "~": "./"
