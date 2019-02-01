@@ -20,7 +20,6 @@ export default class MyDocument extends Document {
     return (
       <html>
         <Head>
-          <title>next-express-emotion</title>
           <style dangerouslySetInnerHTML={{ __html: this.props.css }} />
         </Head>
         <body>
