@@ -3,7 +3,9 @@
     "next/babel"
   ],
   "plugins": [
-    ["emotion"],
+    ["emotion", {
+      "inline": true
+    }],
     ["module-resolver", {
       "alias": {
         "~": "./"
