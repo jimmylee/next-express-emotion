@@ -9,26 +9,10 @@ const STYLES_LAYOUT_LEFT = css`
   width: 320px;
   height: calc(100vh - 48px);
   background: red;
-
   overflow-y: scroll;
 
   ::-webkit-scrollbar {
     width: 0px;
-  }
-
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: white;
-  }
-
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: white;
-  }
-
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: white;
   }
 `;
 
@@ -37,26 +21,10 @@ const STYLES_LAYOUT_RIGHT = css`
   width: 100%;
   background: blue;
   height: calc(100vh - 48px);
-
   overflow-y: scroll;
 
   ::-webkit-scrollbar {
     width: 0px;
-  }
-
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: white;
-  }
-
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: white;
-  }
-
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: white;
   }
 `;
 

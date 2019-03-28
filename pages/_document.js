@@ -3,6 +3,8 @@ import { extractCritical } from 'emotion-server';
 
 import injectGlobalStyles from '~/common/styles/global';
 
+injectGlobalStyles();
+
 export default class MyDocument extends Document {
   static getInitialProps({ renderPage }) {
     const page = renderPage();
@@ -16,8 +18,6 @@ export default class MyDocument extends Document {
     if (ids) {
       __NEXT_DATA__.ids = ids;
     }
-
-    injectGlobalStyles();
   }
 
   render() {
