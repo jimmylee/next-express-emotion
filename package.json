@@ -1,6 +1,9 @@
 {
   "name": "next-express-emotion",
   "version": "0.0.1",
+  "engines": {
+    "node": "10.x"
+  },
   "scripts": {
     "dev": "node .",
     "build": "next build",
