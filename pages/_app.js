@@ -1,19 +1,16 @@
 import * as React from "react";
 
-import { CacheProvider, Global } from "@emotion/react";
-import { cache } from "@emotion/css";
+import { Global } from "@emotion/core";
 
 import App from "next/app";
 import injectGlobalStyles from "~/common/styles/global";
 
-// NOTE(wwwjim):
-// https://nextjs.org/docs/advanced-features/custom-app
 function MyApp({ Component, pageProps }) {
   return (
-    <CacheProvider value={cache}>
+    <React.Fragment>
       <Global styles={injectGlobalStyles()} />
       <Component {...pageProps} />
-    </CacheProvider>
+    </React.Fragment>
   );
 }
 

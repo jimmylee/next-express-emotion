@@ -3,7 +3,7 @@ import * as Constants from "~/common/constants";
 
 import Head from "next/head";
 
-import { css } from "@emotion/react";
+import { css } from "@emotion/core";
 
 const STYLES_LAYOUT_LEFT = css`
   height: calc(100vh - ${Constants.sizes.navigation}px);

@@ -10,20 +10,16 @@
     "start": "NODE_ENV=production node ."
   },
   "dependencies": {
-    "@babel/preset-env": "^7.9.0",
-    "@babel/register": "^7.9.0",
-    "@emotion/babel-preset-css-prop": "^10.0.27",
-    "@emotion/cache": "11.0.0-next.12",
-    "@emotion/core": "^10.0.28",
-    "@emotion/css": "11.0.0-next.12",
-    "@emotion/react": "11.0.0-next.12",
-    "@emotion/server": "11.0.0-next.12",
+    "@babel/preset-env": "^7.12.1",
+    "@babel/register": "^7.12.1",
+    "@emotion/babel-preset-css-prop": "10.1.0",
+    "@emotion/core": "10.0.35",
     "babel-plugin-module-resolver": "^4.0.0",
     "body-parser": "^1.19.0",
     "compression": "^1.7.4",
     "express": "^4.17.1",
-    "next": "^9.4.0",
-    "react": "^16.11.0",
-    "react-dom": "^16.11.0"
+    "next": "^10.0.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
   }
 }

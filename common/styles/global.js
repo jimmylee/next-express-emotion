@@ -1,9 +1,9 @@
 import * as Constants from "~/common/constants";
 
-import { css } from "@emotion/react";
+import { css } from "@emotion/core";
 
 /* prettier-ignore */
-export default () => css`
+const GlobalStyles = () => css`
   html, body, div, span, applet, object, iframe,
   h1, h2, h3, h4, h5, h6, p, blockquote, pre,
   a, abbr, acronym, address, big, cite, code,
@@ -36,3 +36,5 @@ export default () => css`
     font-family: -apple-system, BlinkMacSystemFont, helvetica neue, helvetica, sans-serif;
   }
 `;
+
+export default GlobalStyles;
