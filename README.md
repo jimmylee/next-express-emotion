@@ -1,8 +1,6 @@
 # next-express-emotion
 
-My boilerplate for creating a web application with a server.
-
-Use [this Emotion 11 example](https://github.com/zeit/next.js/tree/canary/examples/with-emotion-11) if you do not want a server.
+My boilerplate for creating a SSR ready web application with a server.
 
 #### Primary dependencies
 
@@ -15,7 +13,6 @@ Use [this Emotion 11 example](https://github.com/zeit/next.js/tree/canary/exampl
 - You don't need a database, see [next-postgres](https://github.com/jimmylee/next-postgres) if you do.
 - You like my front-end code and want to see my technical choices in one place.
 - You need meta tag recommendations for SEO.
-- You are comfortable with the starting 16 dependencies for a full client and server application. I rarely need anything else.
 - You need something you can extend because you write your own custom components and styles.
 
 #### Okay, why CSS-in-JS?

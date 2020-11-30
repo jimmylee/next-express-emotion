@@ -3,39 +3,40 @@ import * as Constants from "~/common/constants";
 
 import Head from "next/head";
 
-import { css } from "@emotion/core";
+import { css } from "@emotion/react";
 
-const STYLES_LAYOUT_LEFT = css`
-  height: calc(100vh - ${Constants.sizes.navigation}px);
-  width: ${Constants.sizes.sidebar}px;
-  background: red;
-  font-size: 2rem;
-  overflow-y: scroll;
-
+const SNIPPET_SCROLLBAR_HIDE = `
   scrollbar-width: none;
   -ms-overflow-style: -ms-autohiding-scrollbar;
+
   ::-webkit-scrollbar {
     width: 0px;
   }
 `;
 
+const STYLES_LAYOUT_LEFT = css`
+  height: calc(100vh - 64px);
+  width: 320px;
+  background: red;
+  font-size: 2rem;
+  overflow-y: scroll;
+
+  ${SNIPPET_SCROLLBAR_HIDE}
+`;
+
 const STYLES_LAYOUT_RIGHT = css`
-  height: calc(100vh - ${Constants.sizes.navigation}px);
+  height: calc(100vh - 64px);
   min-width: 20%;
   width: 100%;
   background: blue;
   font-size: 2rem;
   overflow-y: scroll;
 
-  scrollbar-width: none;
-  -ms-overflow-style: -ms-autohiding-scrollbar;
-  ::-webkit-scrollbar {
-    width: 0px;
-  }
+  ${SNIPPET_SCROLLBAR_HIDE}
 `;
 
 const STYLES_NAVIGATION = css`
-  height: ${Constants.sizes.navigation}px;
+  height: 64px;
   background: green;
   font-size: 2rem;
 `;
