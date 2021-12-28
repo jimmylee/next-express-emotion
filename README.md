@@ -52,6 +52,14 @@ npm run build
 npm run start
 ```
 
+### Scripts
+
+If you need to run node script without running the server, use this example to get started
+
+```sh
+npm run script example
+```
+
 ## Questions?
 
 Twitter: [@wwwjim](https://twitter.com/wwwjim).

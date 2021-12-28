@@ -1,7 +1,7 @@
 import * as React from "react";
 import * as Constants from "~/common/constants";
 
-import Head from "next/head";
+import Page from "~/components/Page";
 
 import { css } from "@emotion/react";
 
@@ -56,49 +56,13 @@ export default class IndexPage extends React.Component {
 
     return (
       <React.Fragment>
-        <Head>
-          <title>{title}</title>
-          <meta name="title" content={title} />
-          <meta name="description" content={description} />
-
-          <meta property="og:type" content="website" />
-          <meta property="og:url" content={url} />
-          <meta property="og:title" content={title} />
-          <meta property="og:description" content={description} />
-          <meta property="og:image" content="/static/social.png" />
-
-          <meta property="twitter:card" content="summary_large_image" />
-          <meta property="twitter:url" content={url} />
-          <meta property="twitter:title" content={title} />
-          <meta property="twitter:description" content={description} />
-          <meta property="twitter:image" content="/static/social.png" />
-
-          <link
-            rel="icon"
-            type="image/png"
-            sizes="32x32"
-            href="/static/favicon-32x32.png"
-          />
-          <link
-            rel="icon"
-            type="image/png"
-            sizes="96x96"
-            href="/static/favicon-96x96.png"
-          />
-          <link
-            rel="icon"
-            type="image/png"
-            sizes="16x16"
-            href="/static/favicon-16x16.png"
-          />
-
-          <link rel="shortcut icon" href="/static/favicon.ico" />
-        </Head>
-        <nav css={STYLES_NAVIGATION}>Navigation</nav>
-        <div css={STYLES_LAYOUT}>
-          <span css={STYLES_LAYOUT_LEFT}>Left Sidebar</span>
-          <span css={STYLES_LAYOUT_RIGHT}>Right Content</span>
-        </div>
+        <Page title={title} description={description} url={url}>
+          <nav css={STYLES_NAVIGATION}>Navigation</nav>
+          <div css={STYLES_LAYOUT}>
+            <span css={STYLES_LAYOUT_LEFT}>Left Sidebar</span>
+            <span css={STYLES_LAYOUT_RIGHT}>Right Content</span>
+          </div>
+        </Page>
       </React.Fragment>
     );
   }
